@@ -108,63 +108,94 @@
         </div>
     </div>
     <!-- Page Header End -->
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Left Image Section -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="img/logo/About.png"
-                            alt="Goodall Transolution Workshop" style="object-fit: cover;">
-                    </div>
-                </div>
-
-                <!-- Right Content Section -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <div class="border-start border-5 border-primary ps-4 mb-5">
-                            <h6 class="text-body text-uppercase mb-2">About Us</h6>
-                            <h1 class="display-6 mb-0">About - Goodall Transolution</h1>
-                        </div>
-
-                        <p class="mb-4">
-                            <strong>Goodall Transolution Services Inc.</strong> was founded with one goal in mind —
-                            to provide courteous, professional, and unparalleled <strong>truck and trailer repair
-                                services</strong>
-                            to Winnipeg and surrounding areas.
-                        </p>
-
-                        <p class="mb-4">
-                            With nearly <strong>15 years of hands-on experience</strong> in the trucking industry,
-                            our expertise covers all types of trucks and trailers including <strong>reefers, flatbeds,
-                                step decks, and containers</strong>.
-                            We take pride in keeping your fleet on the road — efficiently, safely, and reliably.
-                        </p>
-
-                        <div class="border-top mt-4 pt-4">
-                            <div class="row g-4">
-                                <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.1s">
-                                    <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                                    <h6 class="mb-0">On-time Service</h6>
-                                </div>
-                                <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.3s">
-                                    <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                                    <h6 class="mb-0">24/7 Availability</h6>
-                                </div>
-                                <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.5s">
-                                    <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                                    <h6 class="mb-0">Certified Professionals</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+<!-- About Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      
+      <!-- Left Image Section -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" 
+           style="display: flex; justify-content: center; align-items: center;">
+        <div class="position-relative ps-4 pe-4 pt-4 h-100" 
+             style="min-height: 420px; display: flex; justify-content: center; align-items: center;">
+          <img
+            src="img/logo/About.png"
+            alt="Goodall Transolution Workshop"
+            style="
+              width: 95%;
+              height: 430px;
+              object-fit: cover;
+              border-radius: 15px;
+              display: block;
+            "
+          >
         </div>
+      </div>
+
+      <!-- Mobile View Styling -->
+      <style>
+        @media (max-width: 767px) {
+          .col-lg-6 img[alt='Goodall Transolution Workshop'] {
+            width: 100% !important;
+            height: 400px !important;
+            border-radius: 15px !important;
+            margin: 0 10px !important; /* ✅ Adds small left & right gap */
+          }
+
+          .col-lg-6 .position-relative {
+            overflow: visible !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+        }
+      </style>
+
+      <!-- Right Content Section -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="h-100">
+          <div class="border-start border-5 border-primary ps-4 mb-5">
+            <h6 class="text-body text-uppercase mb-2">About Us</h6>
+            <h1 class="display-6 mb-0">About - Goodall Transolution</h1>
+          </div>
+
+          <p class="mb-4">
+            <strong>Goodall Transolution Services Inc.</strong> was founded with one goal in mind —
+            to provide courteous, professional, and unparalleled 
+            <strong>truck and trailer repair services</strong> to Winnipeg and surrounding areas.
+          </p>
+
+          <p class="mb-4">
+            With nearly <strong>15 years of hands-on experience</strong> in the trucking industry,
+            our expertise covers all types of trucks and trailers including 
+            <strong>reefers, flatbeds, step decks, and containers</strong>.
+            We take pride in keeping your fleet on the road — efficiently, safely, and reliably.
+          </p>
+
+          <div class="border-top mt-4 pt-4">
+            <div class="row g-4">
+              <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.1s">
+                <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
+                <h6 class="mb-0">On-time Service</h6>
+              </div>
+              <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.3s">
+                <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
+                <h6 class="mb-0">24/7 Availability</h6>
+              </div>
+              <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.5s">
+                <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
+                <h6 class="mb-0">Certified Professionals</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-    <!-- About End -->
+  </div>
+</div>
+<!-- About End -->
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
