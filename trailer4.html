@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GoodallTransolution | Trailer Repair in Winnipeg</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap & Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<style>
+    /* Modern Typography & Spacing */
+    :root {
+        --primary: #c62828;
+        --dark: #212529;
+        --light: #f8f9fa;
+        --gray: #6c757d;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.7;
+        color: #444;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .section-pad {
+        padding: 100px 0;
+    }
+
+    /* Modern Underline - Responsive & Centered */
+    .underline-center {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 12px;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: var(--dark);
+    }
+
+    .underline-center::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 70px;
+        height: 5px;
+        background: var(--primary);
+        border-radius: 3px;
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+    }
+
+    .underline-center:hover::after {
+        width: 100px;
+    }
+
+    /* Image Styling */
+    .content-img {
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .content-img:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Service Cards - Modern Look */
+    .service-card {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 16px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        border: 1px solid #eee;
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        border-color: var(--primary);
+    }
+
+    .service-card i {
+        font-size: 3rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover i {
+        transform: scale(1.2);
+    }
+
+    .service-card h5 {
+        font-weight: 600;
+        color: var(--dark);
+    }
+
+    /* Button Modern */
+    .btn-modern {
+      background: #9b1414;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(233, 58, 27, 0.3);
+    }
+
+    .btn-modern:hover {
+        background: #c62828;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(216, 218, 221, 0.4);
+    }
+
+    /* Text Primary */
+    .text-primary { color: var(--primary) !important; }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .underline-center {
+            font-size: 1.8rem;
+            padding-bottom: 10px;
+        }
+        .underline-center::after {
+            width: 60px;
+            height: 4px;
+        }
+        .section-pad {
+            padding: 70px 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center border-start border-end px-3">
+                    <small class="fa fa-phone-alt me-2"></small><small>+1 431-877-8000</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center border-end px-3">
+                    <small class="far fa-envelope-open me-2"></small><small>goodalltransolution@gmail.com</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center border-end px-3">
+                    <small class="far fa-clock me-2"></small><small>Mon - Fri : 09 AM - 09 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-square border-end border-start" href="https://www.facebook.com/people/Goodall-Transolution-Service-Inc/61565333938802/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square border-end" href="https://www.instagram.com/goodalltransolution/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">
+                <img src="img/logo/Logo.png" alt="Goodall Transolutions Logo"
+                    style="height: 150px; width: auto; object-fit: contain;">
+
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/logo/h.jpeg.jpg" alt="Trailer Repair">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">Welcome to Goodall Transolutions</h5>
+                                    <h1 class="display-2 text-light mb-3 animated slideInDown">Truck & Trailer Repair Specialists</h1>
+                                    <p class="fs-5 text-light mb-4 animated slideInUp">Keeping your trucks running strong — because your business depends on it.</p>
+                                    <a href="service.html" class="btn btn-primary py-3 px-5">Explore Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== 100% CLIENT CONTENT START ===================== -->
+    <div class="container section-pad bg-white">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+        <h2 class="underline-center mb-4">Trailer Repair in Winnipeg</h2>
+                <p class="lead">
+                    Goodall Transolutions is the solution when you need a trailer repair in Winnipeg that not only delivers quality but also is committed to safety and speed. Transolutions will be the ones to show up and fix your problem so you can get on with your day. To be frank, a trailer cannot be counted among the vehicles. It is the mainstay of your business. It is the carrier of your load, your money-making way, and at times, even your good name. Therefore, if a malfunction occurs, you not only require a quick resolution, but you also demand a durable repair.
+                </p>
+                <p>
+                    Yes, at Goodall Transolutions we have experienced everything – from thoroughly worn-out bearings to complete suspension overhaul. And we realize that proper trailer repair in Winnipeg is not just about changing the parts; it is about recognizing the cause of the problem. That is the way we support the drivers to lower the risk of repeated breakdowns and unpredicted downtime.
+                </p>
+            </div>
+            <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/logo/service6.jpg" alt="Trailer Repair" class="img-fluid content-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light section-pad">
+        <div class="container">
+            <div class="text-center mb-5 wow fadeInUp">
+                <h2 class="underline-center mb-4">The Best Trailer Repair in Winnipeg Isn’t Just About Tools — It’s About Trust</h2>
+            </div>
+            <p class="lead text-center px-3">
+                It is said that anyone can buy a set of wrenches and call himself a mechanic, but if you are looking for the best trailer repair in Winnipeg, you should look for a team that lives by the principles of honesty and quality of work.
+            </p>
+            <p class="text-center px-3">
+                At Goodall, we put ourselves into every job we do. We do not overcharge. We do not sugarcoat. If it is the case, we will let you know directly. If it can be delayed, we will tell you that as well. Such openness has made us one of the most trusted names when it comes to heavy-duty and light trailer repair in Winnipeg.
+            </p>
+        </div>
+    </div>
+
+    <div class="container section-pad">
+        <div class="text-center mb-5 wow fadeInUp">
+            <h2 class="underline-center mb-4">We Fix It All — Because We’ve Seen It All</h2>
+            <p class="lead">The world of trailers is very diverse in both shapes and sizes — there are flatbeds, reefers, dry vans, and livestock haulers, and each of them has its own features. Our team has been engaged in trailer repair in Winnipeg for a long time, therefore we are fully aware of these features.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-card">
+                    <i class="fa fa-tools fa-3x text-primary mb-3"></i>
+                    <h5>Brakes</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-card">
+                    <i class="fa fa-cog fa-3x text-primary mb-3"></i>
+                    <h5>Suspension</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-card">
+                    <i class="fa fa-bolt fa-3x text-primary mb-3"></i>
+                    <h5>Electrical</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-card">
+                    <i class="fa fa-fire fa-3x text-primary mb-3"></i>
+                    <h5>Welding</h5>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <p>
+                Furthermore, we are experts in brakes, suspension, electrical, welding, and axles. Before your rig leaves our shop, we make it a point with quality parts, state-of-the-art diagnostic tools, and years of hands-on experience to ensure it is in peak condition. And, yes, we will even do a quick check to assure there are no other ‘suspicious’ areas before you hit the road to your next destination.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-primary text-white section-pad">
+        <div class="container text-center">
+            <h2 class="underline-center text-white mb-4">Emergency or Routine — We’ve Got You Covered</h2>
+            <p class="fs-4">
+                Here is a fact that most people won’t tell you: the majority of the trailer repair in Winnipeg jobs we perform are due to situations that were at first considered “minor issues” by drivers and thus were ignored for too long. A little squeak, a slight vibration, a dim light — small signs that may become larger and more expensive problems if you decide to wait.
+            </p>
+            <p class="fs-5">
+                This is the reason why we have both emergency and regular maintenance services. If you are out of service on a cold Winnipeg morning, or you just want to be sure before a long trip, we are there for you. It is the main reason why we, as the best trailer repair in Winnipeg, are called — because it’s not only when it’s convenient that we show up, but when you actually need us most.
+            </p>
+           <a href="tel:+14318778000" class="btn btn-modern btn-lg px-5 mt-3">
+    Call 24/7: +1 431-877-8000
+</a>
+        </div>
+    </div>
+
+    <div class="container section-pad">
+        <div class="text-center mb-5 wow fadeInUp">
+            <h2 class="underline-center mb-4">Real People, Real Repairs — That’s the Goodall Way</h2>
+        </div>
+        <p class="lead text-center px-3">
+            We are not a faceless corporate chain. We are locals, we are hands-on, and we genuinely care about people who come into our shop. Most of our customers are the ones who keep coming back — truckers, small business owners, and fleet managers who entrust us with their livelihood.
+        </p>
+        <p class="text-center px-3 ">
+            When you bring your trailer to us, it’s not only a service you get — you become part of a community of drivers who are committed to doing things right from the start. And honestly, that’s what keeps us going. There’s something very satisfying about seeing a rig leave our shop looking and running like new again.
+        </p>
+    </div>
+
+    <div class="container-fluid bg-light section-pad">
+        <div class="container">
+            <h2 class="underline-center text-center mb-5">Why Choose Goodall Transolutions for Trailer Repair in Winnipeg?</h2>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fa fa-check text-primary me-3"></i> We show up on time</li>
+                        <li class="mb-3"><i class="fa fa-check text-primary me-3"></i> We communicate clearly</li>
+                        <li class="mb-3"><i class="fa fa-check text-primary me-3"></i> We take pride in every job</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 wow fadeInUp">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fa fa-check text-primary me-3"></i> Fast without shortcuts</li>
+                        <li class="mb-3"><i class="fa fa-check text-primary me-3"></i> Fair & transparent pricing</li>
+                        <li class="mb-3"><i class="fa fa-check text-primary me-3"></i> Your success is our success</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>
+                    If you have been thinking of the reasons why drivers call us the best trailer repair in Winnipeg, here’s the truth — it’s not only about the repairs. It’s about how we treat people. We show up. We communicate. We take pride in every job, no matter if it’s big or small. And we understand that every hour your trailer is down, you are losing money — that’s why we work fast without taking shortcuts. That’s our promise.
+                </p>
+                <p class="fw-bold">
+                    So, whenever your trailer is acting up — whether it’s a brake line, a busted axle, or a problem you can’t even name — come to Goodall Transolutions. We’ll fix it like it’s our own and make sure you’re back doing what you do best — keeping Winnipeg rolling.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-pad">
+        <div class="text-center">
+            <h2 class="underline-center mb-4">Final Thoughts</h2>
+            <p class="lead">
+                Trailer repair in Winnipeg shouldn’t feel like a guessing game or a gamble. You deserve a team that knows what they’re doing, treats you with respect, and keeps your business moving. That’s exactly what we do at Goodall Transolutions — honest work, fair prices, and reliable results.
+            </p>
+            <p class="fs-3 fw-bold text-primary">
+                Because when your wheels stop turning, everything else does too — and we’re here to make sure that doesn’t happen anytime soon.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg px-5 mt-4">Get Your Free Quote Today</a>
+        </div>
+    </div>
+    <!-- ===================== 100% CLIENT CONTENT END ===================== -->
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <img src="img/logo/Logo.png" alt="Goodall Transolution" style="height:150px; margin-bottom:20px;">
+                    <p class="text-white">
+                        We specialize in professional truck and trailer repair services, delivering reliable solutions
+                        that keep your fleet safe and on the road.
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-primary me-1" href="https://www.facebook.com/people/Goodall-Transolution-Service-Inc/61565333938802/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href="https://www.instagram.com/goodalltransolution/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>201 Emes Rd #5, West St. Paul, MB R2P 1Z2, Canada</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+1 431-877-8000</p>
+                    <p><i class="fa fa-envelope me-3"></i>goodalltransolution@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright bg-secondary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#" class="text-white">Goodall Transolutions</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a href="https://htmlcodex.com" class="text-white">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
