@@ -7,14 +7,14 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+
     <!-- Favicon -->
     <link href="img/logo/fevicon-removebg-preview.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,260 +31,58 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-    :root {
-        --bs-blue: #0d6efd;
-        --bs-indigo: #6610f2;
-        --bs-purple: #6f42c1;
-        --bs-pink: #d63384;
-        --bs-red: #dc3545;
-        /* Default Bootstrap red */
-        --bs-orange: #c62828;
-        /* Changed from orange to red tone */
-        --bs-yellow: #c62828;
-        --bs-green: #198754;
-        --bs-teal: #20c997;
-        --bs-cyan: #0dcaf0;
-        --bs-white: #fff;
-        --bs-gray: #6c757d;
-        --bs-gray-dark: #343a40;
-
-        /* Changed primary color from orange (#c62828) → Red tone */
-        --bs-primary: #c62828;
-        --bs-secondary: #8D9297;
-        --bs-success: #198754;
-        --bs-info: #0dcaf0;
-        --bs-warning: #c62828;
-        --bs-danger: #dc3545;
-        --bs-light: #F8F9FA;
-        --bs-dark: #182333;
-
-        --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    }
-
-    body {
-        font-family: 'Inter', sans-serif;
-        color: var(--dark);
-        background-color: #fefefe;
-    }
-
-    .contact-section {
-        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .contact-section::before {
-        content: '';
+    /* MOBILE MENU — FULL WIDTH & STICK TO NAVBAR */
+@media (max-width: 991.98px) {
+    
+    /* 1. Menu ko full width karo */
+    .navbar-collapse {
         position: absolute;
-        top: 0;
+        top: 100%;           /* Navbar ke bilkul neeche */
+        left: 0;
         right: 0;
-        width: 40%;
-        height: 100%;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%234f46e5" opacity="0.03"><path d="M30,30 Q50,10 70,30 T90,30 T70,70 T30,70 T10,30 T30,30 Z"/></svg>');
-        background-size: cover;
-    }
-
-    .section-title {
-        position: relative;
-        margin-bottom: 3rem;
-    }
-
-    .section-title h6 {
-        color: var(--primary);
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 0.5rem;
-    }
-
-    .section-title h1 {
-        font-weight: 700;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        position: relative;
-        display: inline-block;
-    }
-
-    .section-title h1::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 150px;
-        width: 60px;
-        height: 4px;
-        background: var(--bs-danger);
-        border-radius: 2px;
-    }
-
-    .contact-card {
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        padding: 2rem;
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: 1px solid rgba(0, 0, 0, 0.03);
-    }
-
-    .contact-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    }
-
-    .team-img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 12px;
-        margin-bottom: 1.5rem;
-    }
-
-    .contact-info h3 {
-        font-weight: 700;
-        font-size: 1.4rem;
-        margin-bottom: 0.25rem;
-    }
-
-    .contact-info .position {
-        color: var(--primary);
-        font-weight: 600;
-        margin-bottom: 1rem;
-        font-size: 0.9rem;
-    }
-
-    .contact-details h6 {
-        font-weight: 600;
-        margin-bottom: 0.75rem;
-        color: var(--dark);
-    }
-
-    .contact-details p {
-        color: var(--gray);
-        margin-bottom: 0.5rem;
-        font-size: 0.95rem;
-    }
-
-    .contact-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: rgba(79, 70, 229, 0.1);
-        color: var(--primary);
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    .map-container {
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        height: 100%;
-    }
-
-    .form-container {
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        padding: 2.5rem;
-        height: 100%;
-    }
-
-    .form-control {
-        border-radius: 10px;
-        padding: 0.75rem 1rem;
-        border: 1px solid var(--light-gray);
-        transition: all 0.3s ease;
-    }
-
-    .form-control:focus {
-        border-color: var(--primary);
-        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-    }
-
-    .form-floating>label {
-        padding: 0.75rem 1rem;
-        color: var(--gray);
-    }
-
-    .btn-primary {
-        background: var(--primary);
+        width: 100vw;        /* Full screen width */
+        margin-left: calc(-50vw + 50%); /* Center trick */
+        background: white !important;
+        padding: 20px 15px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         border: none;
-        border-radius: 10px;
-        padding: 0.75rem 2rem;
-        font-weight: 600;
-        transition: all 0.3s ease;
+        z-index: 9999;
     }
 
-    .btn-primary:hover {
-        background: var(--primary-dark);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+    /* 2. Navbar se chipka do (gap hatao) */
+    .navbar-collapse.show {
+        margin-top: 0 !important;
     }
 
-    .contact-methods {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
+    /* 3. Links ko sundar karo */
+    .navbar-nav .nav-link {
+        color: #8D9297 !important;
+        font-weight: 500;
+        padding: 12px 0 !important;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
     }
 
-    .contact-method {
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        background: rgba(79, 70, 229, 0.05);
-        border-radius: 10px;
-        flex: 1;
-        min-width: 200px;
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none;
     }
 
-    .contact-method i {
-        font-size: 1.5rem;
-        color: var(--primary);
-        margin-right: 1rem;
+    .navbar-nav .nav-link:hover {
+        color: #8D9297 !important;
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding-left: 10px;
     }
-
-    .contact-method div {
-        flex: 1;
-    }
-
-    .contact-method h6 {
-        margin-bottom: 0.25rem;
-        font-size: 0.9rem;
-    }
-
-    .contact-method p {
-        margin-bottom: 0;
-        font-size: 0.85rem;
-        color: var(--gray);
-    }
-
-    @media (max-width: 768px) {
-        .contact-section::before {
-            width: 100%;
-            opacity: 0.05;
-        }
-
-        .section-title h1 {
-            font-size: 2rem;
-        }
-
-        .form-container {
-            padding: 1.5rem;
-        }
-    }
+}
 </style>
-
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+
     <!-- Topbar Start -->
     <div class="container-fluid bg-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
@@ -316,13 +114,12 @@
         </div>
     </div>
     <!-- Topbar End -->
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h1 class="m-0">
-                <img src="img/logo/Logo.png" alt="Goodall Transolutions Logo"
-                    style="height: 150px; width: auto; object-fit: contain;">
+                 <img src="img/logo/Logo.png" alt="Goodall Transolutions Logo"
+                style="height: 150px; width: auto; object-fit: contain;">
 
             </h1>
         </a>
@@ -334,7 +131,6 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About Us</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
-
                 <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
             </div>
         </div>
@@ -348,9 +144,8 @@
             <h1 class="display-4 text-white animated slideInDown mb-4">Contact Us</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page"><a href="contact.html">Contact
-                            Us</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page"> <a href="contact.html">Contact Us</a></li>
                 </ol>
             </nav>
         </div>
@@ -358,140 +153,153 @@
     <!-- Page Header End -->
 
 
-    <!-- Contact Section -->
-    <section class="contact-section py-5">
-        <div class="container py-5">
-            <div class="section-title text-center mb-5">
-                <h6>GET IN TOUCH</h6>
-                <h1>Contact Our Team</h1>
-                <p class="lead">We're here to help and answer any questions you might have</p>
-            </div>
+    <!-- WHITE PREMIUM CONTACT START -->
+<section class="contact-white py-5 overflow-hidden bg-white">
+  <div class="container">
+    <div class="row g-5 align-items-center">
 
-            <div class="row g-5 mb-5">
-                <!-- Team Member 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-card">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
-                            alt="Sarah Johnson" class="team-img">
-                        <div class="contact-info">
-                            <h3>Sarah Johnson</h3>
-                            <p class="position">Head of Sales</p>
-                            <div class="contact-details">
-                                <h6>Contact Details</h6>
-                                <p>Sarah leads our sales team with over 10 years of industry experience.</p>
-                                <p><span class="contact-icon"><i class="fas fa-phone"></i></span> +1 (555) 123-4567</p>
-                                <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> sarah@example.com
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-card">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
-                            alt="Michael Chen" class="team-img">
-                        <div class="contact-info">
-                            <h3>Michael Chen</h3>
-                            <p class="position">Head of Marketing</p>
-                            <div class="contact-details">
-                                <h6>Contact Details</h6>
-                                <p>Michael drives our marketing strategy with innovative campaigns.</p>
-                                <p><span class="contact-icon"><i class="fas fa-phone"></i></span> +1 (555) 987-6543</p>
-                                <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> michael@example.com
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Methods -->
-                <div class="col-lg-4">
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h6>Visit Our Office</h6>
-                                <p>123 Business Ave, Suite 100<br>New York, NY 10001</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h6>Working Hours</h6>
-                                <p>Mon - Fri: 9:00 - 18:00<br>Sat: 10:00 - 15:00</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-headset"></i>
-                            <div>
-                                <h6>24/7 Support</h6>
-                                <p>+1 (555) 123-7890<br>support@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-5">
-                <!-- Map -->
-                <div class="col-lg-6">
-                    <div class="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.7191097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANARY!5e0!3m2!1sen!2sus!4v1624459194688!5m2!1sen!2sus"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="col-lg-6">
-                    <div class="form-container">
-                        <div class="mb-4">
-                            <h2 class="mb-3">Send Us a Message</h2>
-                            <p class="text-muted">Fill out the form below and we'll get back to you as soon as possible.
-                            </p>
-                        </div>
-
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                            style="height: 150px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      <!-- Clean White Map -->
+      <div class="col-lg-6">
+        <div class="rounded-4 overflow-hidden shadow-lg border hover-lift">
+          <iframe
+            class="w-100"
+            height="520"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.472009213852!2d-97.129836684387!3d49.984776279414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73e23b0157d3%3A0xb7ae1bcca1739731!2s201%20Emes%20Rd%20%235%2C%20West%20St.%20Paul%2C%20MB%20R2P%201Z2%2C%20Canada!5e0!3m2!1sen!2sin!4v1762269481118!5m2!1sen!2sin"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="p-3 bg-primary text-white text-center">
+            <small class="fw-bold">
+              <i class="fa fa-map-marker-alt me-2"></i>
+              Paul, MB R2P 1Z2, Canada
+            </small>
+          </div>
         </div>
-    </section>
-    <!-- Contact End -->
+      </div>
+
+      <!-- White Contact Info -->
+      <div class="col-lg-6">
+        <div class="mb-5">
+          <span class="text-primary fw-bold text-uppercase ls-2">GET IN TOUCH</span>
+          <h1 class="display-5 fw-bold mt-2 mb-3">
+            We'd Love to <span class="" style="color: #c62828 ;">Hear</span> From You
+          </h1>
+          <p class="lead text-muted">
+            Drop us a line — our team replies within the hour.
+          </p>
+        </div>
+
+        <!-- Clean Cards -->
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="d-flex align-items-center p-4 rounded-4 shadow-sm border hover-lift bg-white">
+              <div class="icon-box me-4">
+                <i class="fa fa-phone-volume text-primary"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-1">Call Us</h5>
+                <p class="mb-0 text-primary fw-bold fs-5">+1 431-877-8000</p>
+              </div>
+              <a href="tel:+14318778000" class="text-muted hover-text-primary">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="d-flex align-items-center p-4 rounded-4 shadow-sm border hover-lift bg-white">
+              <div class="icon-box me-4">
+                <i class="fa fa-envelope text-primary"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-1">Email Us</h5>
+                <p class="mb-0 text-primary fw-bold fs-5">
+goodalltransolution@gmail.com</p>
+              </div>
+              <a href="mailto:hello@yourbrand.com" class="text-muted hover-text-primary">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="d-flex align-items-start p-4 rounded-4 shadow-sm border hover-lift bg-white">
+              <div class="icon-box me-4">
+                <i class="fa fa-map-marked-alt text-primary"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Visit Us</h5>
+                <p class="mb-1 text-muted">
+                  201 Emes Rd #5, West St.<br>
+                  Paul, MB R2P 1Z2, Canada
+                </p>
+                <span class="badge bg-primary text-white">Open Today • 9AM–6PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clean CTA -->
+        <div class="mt-5">
+          <a href="#contact-form" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow hover-scale">
+            Send a Message
+            <i class="fa fa-paper-plane ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- WHITE PREMIUM CONTACT END -->
+
+<style>
+/* Super Clean White Design */
+.hover-lift {
+  transition: all 0.4s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+}
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+.hover-text-primary { transition: color 0.3s; }
+.hover-text-primary:hover { color: #3b82f6 !important; }
+
+/* Icon Box */
+.icon-box {
+  width: 56px; height: 56px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .display-5 { font-size: 2.2rem; }
+  iframe { height: 300px !important; }
+  .p-4 { padding: 1rem !important; }
+}
+</style>
+
+
    <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -552,7 +360,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
